@@ -12,9 +12,8 @@ class Game:
         self.games = 0
         self.played = 0
 
-
     def whowins(self, compare1, compare2):
-        self.played -= 1
+        self.games -= 1
         if compare1 == compare2:
             self.ties += 1
             print("You tied")
@@ -33,10 +32,9 @@ def main():
     except ValueError:
         print("Please enter a number")
     else:
-        computer = randint(0, 2)
-        choice = input("Choose your weapon - (R)ock, (P)aper, or (S)cissors").lower()
-
-        while game.played > 0:
+        while game.games > 0:
+            computer = randint(0, 2)
+            choice = input("Choose your weapon - (R)ock, (P)aper, or (S)cissors").lower()
             if choice == "r":
                 player = 0
                 game.whowins(player, computer)
