@@ -1,7 +1,8 @@
 RPS
 ===
 
-Rock, Paper, Scissors
+This is a classic Rock, Paper, Scissors game. 
+It is coded using Python programming language.
 
 
 
